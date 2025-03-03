@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Face Recognition Exam System is a comprehensive solution designed to simplify, secure, and streamline attendance and seat allocation processes during examinations. Leveraging the latest advancements in artificial intelligence and facial recognition technologies, this system ensures that only registered and authenticated students participate in exams. It integrates multiple features such as face detection, real-time mask detection, gender recognition, and attendance logging, making it a reliable and highly effective platform.
+The **Face Recognition Exam System** is an AI-powered solution designed to simplify, secure, and streamline attendance and seat allocation during examinations. Leveraging cutting-edge **artificial intelligence** and facial recognition technologies, this system ensures that only registered and authenticated students participate in exams. It integrates multiple features such as face detection, real-time mask detection, gender recognition, and attendance logging, making it a **highly effective and reliable** platform.
 
 ---
 
@@ -16,8 +16,8 @@ The Face Recognition Exam System is a comprehensive solution designed to simplif
 - Identifies whether a face is masked or unmasked.
 - Provides feedback to students to remove masks for better identification.
 
-### 3. Student Authentication System
-- Verifies identity using pre-enrolled student data via Support Vector Machines (SVM) and face embeddings.
+### 3. AI-Based Student Authentication System
+- Verifies identity using pre-enrolled student data via **Support Vector Machines (SVM)** and **face embeddings**.
 - Prevents unauthorized students from entering exams.
 
 ### 4. Seat Allocation System
@@ -26,7 +26,7 @@ The Face Recognition Exam System is a comprehensive solution designed to simplif
 
 ### 5. Attendance Logging
 - Automatically logs attendance along with seat allocations.
-- Stores detailed logs, including date, time, and gender.
+- Stores detailed logs, including **date, time, and gender**.
 
 ### 6. Enrollment Functionality
 - Supports enrolling new students by training the model with their images.
@@ -54,7 +54,7 @@ The Face Recognition Exam System is a comprehensive solution designed to simplif
 
 ---
 
-## Installation (For Linux)
+## Installation (Linux)
 
 1. **Clone the repository:**
     ```bash
@@ -69,13 +69,16 @@ The Face Recognition Exam System is a comprehensive solution designed to simplif
     ```
 
 3. **Directory Structure:**
-    ```
-    /work/
-    ├── Models/          # Save the pre-trained models like SVM and mask_detector
-    ├── Attendance/      # Stores the CSV file containing attendance records
-    ├── Student_img/     # Contains the student images for enrollment or validation
-    ```
+    - `/work/Models/`:
+        - Save the pre-trained models like SVM and mask_detector.
+    - `/work/Attendance/`:
+        - Stores the CSV file containing attendance records.
+    - `/work/Student_img/`:
+        - Contains the student images for enrollment or validation.
 
+## Try in Deepnote
+
+[![Deepnote](https://beta.deepnote.org/buttons/try-in-a-jupyter-notebook.svg)](https://deepnote.com/workspace/rubik-test-17adf8c9-1678-4eb3-9b45-b30582109002/project/Face-Recognition-for-Examinations-656a6e4b-42df-434c-8df0-b6590b48d22a?utm_content=656a6e4b-42df-434c-8df0-b6590b48d22a)
 ---
 
 ## How it Works
@@ -120,13 +123,16 @@ The Face Recognition Exam System is a comprehensive solution designed to simplif
 
 ## Future Improvements
 
-- Integration with live webcam feeds for real-time attendance management.
-- Additional analytics for attendance trends and seat optimization.
-- Support for multiple exam halls.
-- Improved UI/UX for non-technical users.
+- Integration with **live webcam feeds** for real-time attendance management.
+- Additional **analytics** for attendance trends and seat optimization.
+- Support for **multiple exam halls**.
+- Improved **UI/UX** for non-technical users.
 
 ---
 
 ## Conclusion
 
-The Face Recognition Exam System is a step towards automating and improving the efficiency of the attendance and examination management process. It not only reduces human intervention but also ensures enhanced security and transparency in the exam process.
+The **Face Recognition Exam System** is a significant step toward automating and improving the efficiency of **AI-based attendance and examination management**. It not only reduces human intervention but also ensures **enhanced security and transparency** in the exam process.
+
+---
+
