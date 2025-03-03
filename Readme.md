@@ -54,7 +54,7 @@ The Face Recognition Exam System is a comprehensive solution designed to simplif
 
 ---
 
-## Installation For linux
+## Installation (For Linux)
 
 1. **Clone the repository:**
     ```bash
@@ -69,12 +69,12 @@ The Face Recognition Exam System is a comprehensive solution designed to simplif
     ```
 
 3. **Directory Structure:**
-    - `/work/Models/`:
-        - Save the pre-trained models like SVM and mask_detector.
-    - `/work/Attendance/`:
-        - Stores the CSV file containing attendance records.
-    - `/work/Student_img/`:
-        - Contains the student images for enrollment or validation.
+    ```
+    /work/
+    ├── Models/          # Save the pre-trained models like SVM and mask_detector
+    ├── Attendance/      # Stores the CSV file containing attendance records
+    ├── Student_img/     # Contains the student images for enrollment or validation
+    ```
 
 ---
 
