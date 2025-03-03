@@ -1,0 +1,132 @@
+# The Face Recognition Exam System
+
+## Introduction
+
+The Face Recognition Exam System is a comprehensive solution designed to simplify, secure, and streamline attendance and seat allocation processes during examinations. Leveraging the latest advancements in artificial intelligence and facial recognition technologies, this system ensures that only registered and authenticated students participate in exams. It integrates multiple features such as face detection, real-time mask detection, gender recognition, and attendance logging, making it a reliable and highly effective platform.
+
+---
+
+## Features
+
+### 1. Face Detection and Gender Recognition
+- Detects faces from images while also identifying the gender of individuals.
+- Uses advanced deep learning facial recognition models for high accuracy.
+
+### 2. Real-Time Mask Detection
+- Identifies whether a face is masked or unmasked.
+- Provides feedback to students to remove masks for better identification.
+
+### 3. Student Authentication System
+- Verifies identity using pre-enrolled student data via Support Vector Machines (SVM) and face embeddings.
+- Prevents unauthorized students from entering exams.
+
+### 4. Seat Allocation System
+- Automatically allocates free seats to authenticated students.
+- Optimizes seating plans based on configurable hall layouts.
+
+### 5. Attendance Logging
+- Automatically logs attendance along with seat allocations.
+- Stores detailed logs, including date, time, and gender.
+
+### 6. Enrollment Functionality
+- Supports enrolling new students by training the model with their images.
+- Maps student images to unique IDs ensuring minimal redundancy.
+
+### 7. Error Handling and Feedback
+- Provides real-time feedback for errors, including non-detection of faces or absence of seat availability.
+- Accurately handles various edge cases for smooth operations.
+
+### 8. Low Resource Dependency
+- Lightweight design ensures it can run effectively on machines with minimal resources.
+
+---
+
+## Technologies Used
+
+- **Python**: Main programming language for implementation.
+- **OpenCV**: Image processing and face detection.
+- **TensorFlow & Keras**: Deep learning model handling and mask detection.
+- **MTCNN**: Multi-task Convolutional Neural Network to detect faces.
+- **FaceNet**: For facial embeddings and authentication.
+- **DeepFace**: For gender recognition and analysis.
+- **Pandas**: For structured data storage and attendance logging.
+- **Scikit-Learn**: Implementing SVM for student identification.
+
+---
+
+## Installation For linux
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/rubikproxy/AI-Face-Recognition-Exam-System
+    cd AI-Face-Recognition-Exam-System
+    ```
+
+2. **Install the Required Libraries:**
+    ```bash
+    pip install opencv-python numpy scikit-learn keras tensorflow mtcnn keras_facenet deepface
+    sudo apt-get update && sudo apt-get install -y libgl1
+    ```
+
+3. **Directory Structure:**
+    - `/work/Models/`:
+        - Save the pre-trained models like SVM and mask_detector.
+    - `/work/Attendance/`:
+        - Stores the CSV file containing attendance records.
+    - `/work/Student_img/`:
+        - Contains the student images for enrollment or validation.
+
+---
+
+## How it Works
+
+1. The student's face image or real-time frame is passed to the system.
+2. Facial detection is performed to identify and preprocess the face.
+3. The system validates whether the student is wearing a mask.
+4. The pre-trained SVM model authenticates the student.
+5. If authenticated, the system allocates a specific seat from the seating plan.
+6. Attendance is logged in a CSV file, recording details such as date, seat number, and gender.
+
+---
+
+## Usage
+
+### For Administrators:
+- **Enrollment:** Use the `enroll_students()` function to add new students to the system.
+    ```python
+    student_images = ["/path/to/img1.jpg", "/path/to/img2.jpg"]
+    student_ids = ["Student001", "Student002"]
+    enroll_students(student_images, student_ids)
+    ```
+
+### For Authentication and Attendance:
+    ```python
+    face_image = "/path/to/student_current_image.jpg"
+    result = general_function(face_image)
+    ```
+    - If a student is recognized, their ID and seat details will be displayed.
+    - Attendance will be marked automatically in the attendance CSV file.
+
+---
+
+## File Definitions
+
+- **svm_model.pkl**: Pre-trained Support Vector Machine model for student authentication.
+- **label_encoder.pkl**: Label encoder to map between student IDs and model predictions.
+- **attendance.csv**: Log file for tracking exam attendance.
+- **mask_detector.model**: Pre-trained Keras model for mask detection.
+
+---
+
+## Future Improvements
+
+- Integration with live webcam feeds for real-time attendance management.
+- Additional analytics for attendance trends and seat optimization.
+- Support for multiple exam halls.
+- Improved UI/UX for non-technical users.
+
+---
+
+## Conclusion
+
+The Face Recognition Exam System is a step towards automating and improving the efficiency of the attendance and examination management process. It not only reduces human intervention but also ensures enhanced security and transparency in the exam process.
